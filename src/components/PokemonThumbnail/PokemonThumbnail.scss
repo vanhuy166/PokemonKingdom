@@ -1,0 +1,190 @@
+
+.thumb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0.2rem;
+  margin: 0.8rem 0.3rem;
+  border: 1px solid #efefef;
+  border-radius: 2rem;
+  min-width: 160px;
+  min-height: 268px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+  transition: all 0.2s linear;
+
+  &:hover {
+    transform: translateY(-12px);
+
+    img {
+      width: 160px;
+      height: 160px;
+      animation: shake 1s linear infinite;
+    }
+  }
+
+  .number {
+    border-radius: 1rem;
+    padding: 0.2rem 0.4rem;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+    transition: all 0.2s linear;
+  }
+
+  small {
+    text-transform: capitalize;
+  }
+
+  &.rock {
+    background-image: linear-gradient(to top, #283048 0%, #859398 100%);
+    color: #fff;
+  }
+  &.ghost {
+    background-image: linear-gradient(to top, #706c86 0%, #706c86 100%);
+    color: #fff;
+  }
+  &.electric {
+    background-image: linear-gradient(to right, #fceabb 0%, #f8b500 100%);
+  }
+  &.bug {
+    background-image: linear-gradient(to top, #16a085 0%, #f4d03f 100%);
+    color: #fff;
+  }
+  &.poison {
+    background-image: linear-gradient(to top, #42275a 0%, #734b6d 100%);
+    color: #fff;
+  }
+  &.normal {
+    background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  }
+  &.fairy {
+    background-image: linear-gradient(
+      to top,
+      #ff9a9e 0%,
+      #fecfef 99%,
+      #fecfef 100%
+    );
+  }
+  &.fire {
+    background-image: linear-gradient(315deg, #fe8c00 0%, #f83600 74%);
+    color: #fff;
+  }
+  &.grass {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  }
+  &.water {
+    background-image: linear-gradient(120deg, #0575e6 0%, #021b79 100%);
+    color: #fff;
+  }
+  &.ground {
+    background-image: linear-gradient(315deg, #603813 0%, #b29f94 74%);
+    color: #fff;
+  }
+
+  &.psychic {
+    background-image: linear-gradient(315deg, #de6161 0%, #2657eb 74%);
+    color: #fff;
+  }
+
+  &.fighting {
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    color: #fff;
+  }
+
+  &.ice {
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  }
+
+  &.dragon {
+    background-image: linear-gradient(120deg, #870000 0%, #190a05 100%);
+    color: #fff;
+  }
+
+  &.dark {
+    background-image: linear-gradient(120deg, #232526 0%, #414345 100%);
+    color: #fff;
+  }
+
+  &.steel {
+    background-image: linear-gradient(120deg, #8e9eab 0%, #eef2f3 100%);
+  }
+
+  &.flying {
+    background: linear-gradient(to right, #007991, #78ffd6); 
+    color: #fff
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0px,0px) rotate(0deg);
+  }
+  25% {
+    transform: translate(2px,2px) rotate(2deg);
+  }
+  50% {
+    transform: translate(0px,0px) rotate(2deg);
+  }
+  75% {
+    transform: translate(-2px,-2px)  rotate(2deg);
+  }
+  100% {
+    transform: translate(0px,0px)  rotate(0deg);
+  }
+}
+
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  button {
+    color: rgb(22, 22, 22);
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.185);
+
+    &:hover {
+      background-color: #ff0000;
+      background-image: linear-gradient(315deg, #ff0000 0%, #ffed00 74%);
+    }
+  }
+}
+
+.load-more {
+  background-color: #76daff;
+  background-image: linear-gradient(315deg, #76daff 0%, #fcd000 74%);
+  border-radius: 6px;
+  border: 1px solid #c6c6c6;
+  color: #444;
+  padding: 0.5rem 1.5rem;
+  min-width: 20%;
+  margin-top: 1rem;
+
+  font-family: "Satisfy", cursive;
+}
+
+.pokeinfo {
+  margin: 0 25px;
+  font-family: "Satisfy", cursive;
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+
+  &:hover {
+    background-image: linear-gradient(
+      -20deg,
+      #ddd6f3 0%,
+      #faaca8 100%,
+      #faaca8 100%
+    );
+  }
+}
+
+
