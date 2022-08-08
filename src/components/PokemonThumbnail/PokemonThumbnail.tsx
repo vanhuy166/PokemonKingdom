@@ -3,6 +3,27 @@ import React, { useState } from "react";
 import Description from "../Description";
 import "./PokemonThumbnail.scss";
 
+interface Iprops {
+  id: string,
+  name: string,
+  image: string,
+  type: string,
+  height: number,
+  weight: number,
+  stat1: string,
+  stat2: string,
+  stat3: string,
+  stat4: string,
+  stat5: string,
+  stat6: string,
+  bs1: number,
+  bs2: number,
+  bs3: number,
+  bs4: number,
+  bs5: number,
+  bs6: number,
+}
+
 const PokemonThumbnail = ({
   id,
   name,
@@ -22,7 +43,7 @@ const PokemonThumbnail = ({
   bs4,
   bs5,
   bs6,
-}) => {
+}: Iprops) => {
   const style = `thumb-container ${type}`;
   const [show, setShow] = useState(false);
   return (

@@ -1,6 +1,23 @@
 import React from "react";
 import "./Description.scss";
 
+interface Iprops {
+  heightpok: number,
+  weightpok: number,
+  pokstat1: string,
+  pokstat2: string,
+  pokstat3: string,
+  pokstat4: string,
+  pokstat5: string,
+  pokstat6: string,
+  posbs1: number,
+  posbs2: number,
+  posbs3: number,
+  posbs4: number,
+  posbs5: number,
+  posbs6: number,
+}
+
 const Description = ({
   heightpok,
   weightpok,
@@ -16,7 +33,7 @@ const Description = ({
   posbs4,
   posbs5,
   posbs6,
-}) => {
+}: Iprops) => {
   return (
     <div className="desc">
       <p>
